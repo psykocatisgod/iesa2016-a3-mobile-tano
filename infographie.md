@@ -1,4 +1,5 @@
-1) Smartphones vendu en 2015: 399,5 millions de smartphones livrés dans le monde //
+1) Smartphones vendu en 2015: 399,5 millions de smartphones livrés dans le monde 
+
 2) PDM des marques:
   - 1/ Samsung = 21,9%
   - 2/ Apple = 14,6%
