@@ -75,6 +75,7 @@ var app = {
             }
         };
 
+        alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur');
         var success = function () { alert('Message sent successfully'); };
         var error = function (e) { alert('Message Failed:' + e); };
         sms.send(number, message, options, success, error);
