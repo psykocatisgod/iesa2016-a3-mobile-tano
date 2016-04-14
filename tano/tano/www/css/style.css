@@ -13,4 +13,8 @@ fieldset {
 .clear {
   clear: both; }
 
+#map {
+  width: 100%;
+  height: 250px; }
+
 /*# sourceMappingURL=style.css.map */
