@@ -117,7 +117,7 @@ h1 {
 
 
 /* APP */
-.modal-text-message
+.modal-dialog
 {
-    display: none;
+    margin-top: 100px;
 }

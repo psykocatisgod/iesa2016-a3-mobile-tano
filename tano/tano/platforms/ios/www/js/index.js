@@ -49,7 +49,7 @@ var app = {
                 var nom = contact.name.familyName;
                 var numero = contact.phoneNumbers[0].value;
 
-                $('.modal-text-message').show();
+                $('#myModal').modal('show')
 
                 $('.sendSms').click(function(){
                     var textsms = $('#messageTxt').val();
@@ -75,9 +75,13 @@ var app = {
             }
         };
 
-        var success = function () { alert('Message sent successfully'); };
-        var error = function (e) { alert('Message Failed:' + e); };
-        sms.send(number, message, options, success, error);
+        $('#myModal').modal('hide')
+        alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur');
+
+        var success = function () { alert('Le message été envoyé à ' + prenom + ' ' + nom); };
+        var error = function () { alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur')};
+
+        //sms.send(number, message, options, success, error);
     },
 
 
