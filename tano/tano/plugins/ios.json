@@ -18,6 +18,9 @@
         },
         "com.cordova.plugins.sms": {
             "PACKAGE_NAME": "fr.tano.iesacordova"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "fr.tano.iesacordova"
         }
     },
     "dependent_plugins": {}
