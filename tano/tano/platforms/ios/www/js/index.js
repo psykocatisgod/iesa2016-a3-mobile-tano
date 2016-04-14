@@ -32,8 +32,50 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         app.receivedEvent('deviceready');
+
+        app.setupPhotoFindButton();
+    },
+
+    setupPhotoFindButton: function () {
+        $('#findPhotoAlbum').click(function () {
+            function cameraSuccess(imageData) {
+                var image = document.getElementById('imgCamera');
+                image.src = "data:image/jpeg;base64," + imageData;
+            };
+
+            function cameraError(message) {
+                alert('Erreur : ' + message);
+            };
+
+            var cameraOptions = {
+                destinationType: Camera.DestinationType.FILE_URI,
+                sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+                popoverOptions: new CameraPopoverOptions(300, 300, 100, 100, Camera.PopoverArrowDirection.ARROW_ANY)
+            };
+
+            navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+        });
+
+        $('#camera').click(function () {
+            function cameraSuccess(imageURI) {
+                var image = document.getElementById('imgCamera');
+                image.src = imageURI;
+            };
+
+            function cameraError(message) {
+                alert('Erreur : ' + message);
+            };
+
+            var cameraOptions = {
+                quality: 50,
+                destinationType: Camera.DestinationType.FILE_URI,
+                popoverOptions: new CameraPopoverOptions(300, 300, 100, 100, Camera.PopoverArrowDirection.ARROW_ANY)
+            };
+
+            navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
