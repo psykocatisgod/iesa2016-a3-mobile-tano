@@ -36,7 +36,50 @@ var app = {
         app.receivedEvent('deviceready');
         app.setupFindContactsButtonCallback();
         app.setupPhotoFindButton();
+
     },
+
+
+    setupFindContactsButtonCallback: function () {
+        $('#findButton').click(function () {
+
+            navigator.contacts.pickContact(function(contact)
+            {
+                var prenom = contact.name.givenName;
+                var nom = contact.name.familyName;
+                var numero = contact.phoneNumbers[0].value;
+
+                $('.modal-text-message').show();
+
+                $('.sendSms').click(function(){
+                    var textsms = $('#messageTxt').val();
+                    app.sendSms(prenom, nom, numero, textsms);
+                });
+
+            },function(err){
+                console.log('Error: ' + err);
+            });
+        });
+    },
+
+    sendSms: function(prenom, nom, numero, textsms) {
+        var number = numero;
+        var message = textsms;
+
+        //CONFIGURATION
+        var options = {
+            replaceLineBreaks: false, // true to replace \n by a new line, false by default
+            android: {
+                intent: 'INTENT'  // send SMS with the native android SMS messaging
+                //intent: '' // send SMS without open any other app
+            }
+        };
+
+        var success = function () { alert('Message sent successfully'); };
+        var error = function (e) { alert('Message Failed:' + e); };
+        sms.send(number, message, options, success, error);
+    },
+
 
     setupPhotoFindButton: function () {
         $('#findPhotoAlbum').click(function () {

@@ -28,6 +28,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+        <meta charset="UTF-8">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -38,9 +39,27 @@
     <body>
         <div class="app">
             <h1>Apache Cordova</h1>
+
+
+            <div class="camera">
                 <img src="" alt="" id="imgCamera">
                 <input type="submit" value="album" id="findPhotoAlbum">
                 <input type="submit" value="take a shot" id="camera">
+            </div>
+
+
+            <div class="contacts">
+                <input id="findButton" type="submit" value="Check">
+                <div id="name"></div>
+            </div>
+
+
+            <div class="modal-text-message">
+                <textarea id="messageTxt" placeholder="Enter message"></textarea>
+                <input class="sendSms" type="button" value="Send SMS" />
+            </div>
+
+
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>

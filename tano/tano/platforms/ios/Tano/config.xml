@@ -21,6 +21,9 @@
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts" />
     </feature>
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
     <name>Tano</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

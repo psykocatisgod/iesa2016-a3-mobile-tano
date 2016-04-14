@@ -119,6 +119,14 @@ module.exports = [
         "merges": [
             "Contact"
         ]
+    },
+    {
+        "file": "plugins/com.cordova.plugins.sms/www/sms.js",
+        "id": "com.cordova.plugins.sms.Sms",
+        "pluginId": "com.cordova.plugins.sms",
+        "clobbers": [
+            "window.sms"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -126,7 +134,8 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-camera": "2.1.1",
-    "cordova-plugin-contacts": "2.0.1"
+    "cordova-plugin-contacts": "2.0.1",
+    "com.cordova.plugins.sms": "0.1.10"
 }
 // BOTTOM OF METADATA
 });

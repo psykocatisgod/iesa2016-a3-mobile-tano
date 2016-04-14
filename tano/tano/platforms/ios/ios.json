@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"Contacts\"><param name=\"ios-package\" value=\"CDVContacts\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -43,6 +47,9 @@
             "PACKAGE_NAME": "fr.tano.iesacordova"
         },
         "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "fr.tano.iesacordova"
+        },
+        "com.cordova.plugins.sms": {
             "PACKAGE_NAME": "fr.tano.iesacordova"
         }
     },
@@ -167,11 +174,20 @@
             "merges": [
                 "Contact"
             ]
+        },
+        {
+            "file": "plugins/com.cordova.plugins.sms/www/sms.js",
+            "id": "com.cordova.plugins.sms.Sms",
+            "pluginId": "com.cordova.plugins.sms",
+            "clobbers": [
+                "window.sms"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.1",
         "cordova-plugin-camera": "2.1.1",
-        "cordova-plugin-contacts": "2.0.1"
+        "cordova-plugin-contacts": "2.0.1",
+        "com.cordova.plugins.sms": "0.1.10"
     }
 }

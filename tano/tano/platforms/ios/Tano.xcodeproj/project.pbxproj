@@ -25,6 +25,8 @@
 		662F658311E547F49B46A1A7 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5626664A53734AA3AB11D5AA /* CDVContact.m */; };
 		4AAD920480B1417CA818A941 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FBA2FD54AD46FFBC109B3E /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8B8BB2CE261948DC80DCA2B4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716192FC43B54FADA858E387 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F4D6D4A302B142828FF9A29C /* Sms.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA28C5C63E74348BE88D593 /* Sms.m */; };
+		820F36B1277E4F9096021603 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2F0C364FAC40A793E0EE29 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,9 @@
 		9EE45AF6C4054DA49963F297 /* CDVContact.h */ = {isa = PBXFileReference; name = "CDVContact.h"; path = "cordova-plugin-contacts/CDVContact.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		47FBA2FD54AD46FFBC109B3E /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		716192FC43B54FADA858E387 /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5AA28C5C63E74348BE88D593 /* Sms.m */ = {isa = PBXFileReference; name = "Sms.m"; path = "com.cordova.plugins.sms/Sms.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2584A602F1BB4763917CA29B /* Sms.h */ = {isa = PBXFileReference; name = "Sms.h"; path = "com.cordova.plugins.sms/Sms.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BA2F0C364FAC40A793E0EE29 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 				37FEFFBBAA924DB9BF0FB748 /* AVFoundation.framework in Frameworks */,
 				4AAD920480B1417CA818A941 /* AddressBook.framework in Frameworks */,
 				8B8BB2CE261948DC80DCA2B4 /* AddressBookUI.framework in Frameworks */,
+				820F36B1277E4F9096021603 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +173,7 @@
 				A00AEB3D5A764BDD9CF87051 /* AVFoundation.framework */,
 				47FBA2FD54AD46FFBC109B3E /* AddressBook.framework */,
 				716192FC43B54FADA858E387 /* AddressBookUI.framework */,
+				BA2F0C364FAC40A793E0EE29 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,6 +210,8 @@
 				5626664A53734AA3AB11D5AA /* CDVContact.m */,
 				9599F81028F849B38A7F4D11 /* CDVContacts.h */,
 				9EE45AF6C4054DA49963F297 /* CDVContact.h */,
+				5AA28C5C63E74348BE88D593 /* Sms.m */,
+				2584A602F1BB4763917CA29B /* Sms.h */,
 			);
 			name = Plugins;
 			path = "Tano/Plugins";
@@ -322,6 +331,7 @@
 				058CD5BD13814DF28161859B /* CDVJpegHeaderWriter.m in Sources */,
 				C54A4E2EB9F24D62AB3C37C9 /* CDVContacts.m in Sources */,
 				662F658311E547F49B46A1A7 /* CDVContact.m in Sources */,
+				F4D6D4A302B142828FF9A29C /* Sms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

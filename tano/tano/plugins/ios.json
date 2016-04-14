@@ -15,6 +15,9 @@
         },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "fr.tano.iesacordova"
+        },
+        "com.cordova.plugins.sms": {
+            "PACKAGE_NAME": "fr.tano.iesacordova"
         }
     },
     "dependent_plugins": {}
