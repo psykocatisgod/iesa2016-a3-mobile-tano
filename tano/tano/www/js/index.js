@@ -75,7 +75,7 @@ var app = {
             }
         };
 
-        $('#myModal').modal('hide')
+        $('#myModal').modal('hide');
         alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur');
 
         var success = function () { alert('Le message été envoyé à ' + prenom + ' ' + nom); };

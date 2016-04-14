@@ -39,43 +39,35 @@
     </head>
     <body>
         <div class="app">
-            <h1>Apache Cordova</h1>
-
 
             <div class="camera">
+                <h2>Choisir une photo</h2>
                 <img src="" alt="" id="imgCamera">
-                <input type="submit" value="album" id="findPhotoAlbum">
-                <input type="submit" value="take a shot" id="camera">
+                <input type="submit" class="btn btn-default" value="Album Photo" id="findPhotoAlbum">
+                <input type="submit" class="btn btn-default" value="Prendre une photo" id="camera">
             </div>
 
 
             <div class="contacts">
-                <input id="findButton" type="submit" value="Check">
+                <h2>Contacts</h2>
+                <input id="findButton" class="btn btn-default" type="submit" value="Choisir un contact..">
                 <div id="name"></div>
             </div>
 
 
 
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog">
+                <div class="modal-dialog" style="margin-top: 100px;">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4>Envoyer un message...</h4>
                         </div>
                         <div class="modal-body">
                             <textarea id="messageTxt" placeholder="Enter message"></textarea>
-                            <input class="sendSms" type="button" value="Send SMS" />
+                            <input class="sendSms btn btn-default" type="button" value="Send SMS" />
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-
-
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
             </div>
         </div>
         <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
