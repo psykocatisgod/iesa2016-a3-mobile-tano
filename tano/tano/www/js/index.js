@@ -42,30 +42,24 @@ var app = {
 
     setupFindContactsButtonCallback: function () {
         $('#findButton').click(function () {
-
             navigator.contacts.pickContact(function(contact)
             {
                 var prenom = contact.name.givenName;
                 var nom = contact.name.familyName;
                 var numero = contact.phoneNumbers[0].value;
-
-                $('#myModal').modal('show')
-
+                $('#myModal').modal('show');
                 $('.sendSms').click(function(){
                     var textsms = $('#messageTxt').val();
                     app.sendSms(prenom, nom, numero, textsms);
                 });
-
             },function(err){
                 console.log('Error: ' + err);
             });
         });
     },
-
     sendSms: function(prenom, nom, numero, textsms) {
         var number = numero;
         var message = textsms;
-
         //CONFIGURATION
         var options = {
             replaceLineBreaks: false, // true to replace \n by a new line, false by default
@@ -74,14 +68,10 @@ var app = {
                 //intent: '' // send SMS without open any other app
             }
         };
-
-        $('#myModal').modal('hide');
         alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur');
-
-        var success = function () { alert('Le message été envoyé à ' + prenom + ' ' + nom); };
-        var error = function () { alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur')};
-
-        //sms.send(number, message, options, success, error);
+        var success = function () { alert('Message sent successfully'); };
+        var error = function (e) { alert('Message Failed:' + e); };
+        sms.send(number, message, options, success, error);
     },
 
 
