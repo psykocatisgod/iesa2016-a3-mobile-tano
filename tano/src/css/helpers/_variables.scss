@@ -1,12 +1,5 @@
-$raleway: 'Raleway';
-$raleway-sm-Bold: 'Raleway-SemiBold';
-$yanone-light: 'YanoneKaffeesatz-Light';
-$yanone-regular: 'YanoneKaffeesatz-Regular';
-$reis:'reisregular';
-
 $white: #fff;
 $black: #000;
-
 
 @mixin transition($transition...) {
   -webkit-transition: $transition;
