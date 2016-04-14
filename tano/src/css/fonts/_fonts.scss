@@ -1,0 +1,54 @@
+@font-face {
+    font-family: $raleway;
+    src: url('../fonts/Raleway.eot');
+    src: url('../fonts/Raleway.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/Raleway.woff') format('woff'),
+    	url('../fonts/Raleway.ttf')  format('truetype'),
+    	url('../fonts/Raleway.svg#Raleway') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $raleway-sm-Bold;
+    src: url('../fonts/Raleway-SemiBold.eot');
+    src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/Raleway-SemiBold.woff') format('woff'),
+    	url('../fonts/Raleway-SemiBold.ttf')  format('truetype'),
+    	url('../fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $yanone-light;
+    src: url('../fonts/YanoneKaffeesatz-Light.eot');
+    src: url('../fonts/YanoneKaffeesatz-Light.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/YanoneKaffeesatz-Light.woff') format('woff'),
+    	url('../fonts/YanoneKaffeesatz-Light.ttf')  format('truetype'),
+    	url('../fonts/YanoneKaffeesatz-Light.svg#YanoneKaffeesatz-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $yanone-regular;
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/YanoneKaffeesatz-Regular.woff') format('woff'),
+    	url('../fonts/YanoneKaffeesatz-Regular.ttf')  format('truetype'),
+    	url('../fonts/YanoneKaffeesatz-Regular.svg#YanoneKaffeesatz-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $reis;
+    src: url('../fonts/reis-regular-webfont.eot');
+    src: url('../fonts/reis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/reis-regular-webfont.woff') format('woff'),
+        url('../fonts/reis-regular-webfont.ttf')  format('truetype'),
+        url('../fonts/reis-regular-webfont.svg#reis-regular-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
