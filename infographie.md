@@ -1,4 +1,5 @@
-1) Smartphones vendu en 2015: 399,5 millions de smartphones livrés dans le monde //
+1) Smartphones vendu en 2015: 399,5 millions de smartphones livrés dans le monde 
+
 2) PDM des marques:
   - 1/ Samsung = 21,9%
   - 2/ Apple = 14,6%
@@ -16,4 +17,21 @@
   
 5) POurcentage homme/femme: 
   - 60% Hommes / Femmes 40% (France - 2015)
+  
+6) Top 15 des marques de smartphones préférés des français (2015):
+  - Samsung / 1045 K
+  - Apple / 1007 K
+  - Sony / 323 K
+  - LG / 266 K
+  - Nokia / 200 K
+  - HTC / 165 K
+  - Wiko / 159 K
+  - OnePlus / 128 K
+  - Huawei / 112 K
+  - Google / 100 K
+  - Asus / 94 K
+  - Archos / 80 K
+  - Microsoft / 70 K
+  - Motorola / 64 K
+  - Honor / 59 K
 
