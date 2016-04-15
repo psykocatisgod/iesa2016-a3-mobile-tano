@@ -9,3 +9,7 @@
   - Josselin Tura
   
 = Projet --> Tano
+
+Pitch :
+
+"Connaître les menus et avis des restaurants près de chez soi."
