@@ -16,11 +16,13 @@ $(function () {
                 lng: position.coords.longitude
             };
 
+
+
             var mycoord = new google.maps.LatLng( LatiLong.lat, LatiLong.lng );
 
             var options = {
                 center: mycoord,
-                zoom: 7,
+                zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 draggable: true,
                 scrollwheel: false
@@ -96,19 +98,28 @@ $(function () {
                 }, callback);
             });
 
+            service.nearbySearch({
+                location: LatiLong,
+                radius: 300,
+                types: ['restaurant']
+            }, callback);
+
+
         }//onSuccess
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
 
     }
 
     function callback(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
-            console.log('ici');
+            var reponse = document.querySelector('.list-group');
+            reponse.innerHTML = '';
+            final = [];
             for (var i = 0; i < results.length; i++) {
                 createMarker(results[i]);
-                var reponse = document.querySelector('.list-group'),
-                    list = document.createElement('li'),
-                    valeur = results[i]['name'];
+
+                var list = document.createElement('li');
                 final.push(results[i]['name']);
 
                 reponse.appendChild(list);
