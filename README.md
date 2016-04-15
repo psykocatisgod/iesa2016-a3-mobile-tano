@@ -1,6 +1,6 @@
 # iesa2016-a3-mobile-tano
 
-= Membres
+# Membres
   - Mathieu Rodrigues
   - Paul Karampournis
   - Titouan Pierre
@@ -10,7 +10,7 @@
   
 = Projet --> Tano
 
-Pitch :
+# Pitch :
 
 "Connaître les menus et avis des restaurants près de chez soi."
 
