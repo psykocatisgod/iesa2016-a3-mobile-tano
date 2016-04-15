@@ -25,8 +25,9 @@ $(function () {
 
 	function ajaxify(){
 		 $.ajax({
-                url : "http://www.titouanpierre.com/json/_infos.json",
-                type: 'POST',
+                url : "http://www.titouanpierre.com/json/read.php",
+                // url : "http://localhost/iesa/mobile/tano/iesa2016-a3-mobile-tano/tano/json/read.php",
+                type: 'GET',
                 dataType: 'json',
                 success : function(data){
 
@@ -39,7 +40,10 @@ $(function () {
 		            alert('Erreur Serveur');
 		        }//Fin Error//endSuccess
         });
-	}
+
+
+
+	}	
 
 	ajaxify();
 
