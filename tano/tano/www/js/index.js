@@ -79,7 +79,7 @@ var app = {
         $('#findPhotoAlbum').click(function () {
             function cameraSuccess(imageData) {
                 var image = document.getElementById('imgCamera');
-                image.src = "data:image/jpeg;base64," + imageData;
+                image.src = imageData;
             };
 
             function cameraError(message) {
