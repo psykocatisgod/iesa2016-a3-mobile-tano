@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDurP5qtgOwOorCWW8jTDkD-pKMZExD6B4&libraries=places"></script>
+    <title>Map</title>
+</head>
+<body id="langue">
+<nav id="langue-menu">
+    <div class="dropdown">
+        <span class="curr-locale"></span>
+        <div class="other-locals">
+            <ul class="dropdown-menu">
+                <li class="" data-loc="en-ES">en</li>
+                <li class="" data-loc="es-ES">es</li>
+                <li class="" data-loc="fr-FR">fr</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="app">
+    <h1>Votre locale est <span id="curr-locale" class="curr-locale"></span></h1>
+
+    <a href="index.html">Page d'accueil</a>
+    <a href="map.html">Géolocalisation</a>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/langue.js"></script>
+</body>
+</html>

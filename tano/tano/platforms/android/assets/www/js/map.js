@@ -91,7 +91,7 @@ $(function () {
                 });
 
                 carte.fitBounds(bounds);
-                
+
                 var cityAddress = document.querySelector('.cityAddress');
                 cityAddress.innerHTML = ' de ' + places[0].formatted_address;
 

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/paulkarampournis/Sites/projet_mobile_iesa/iesa2016-a3-mobile-tano/tano/tano/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/paulkarampournis/Sites/projet_mobile_iesa/iesa2016-a3-mobile-tano/tano/tano/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>

@@ -22,3 +22,24 @@ fieldset {
 {
     margin-top: 20px;
 }
+
+
+#langue #langue-menu {
+    width: 100%;
+    height: 50px;
+    background-color: #961e1e; }
+#langue #langue-menu .dropdown {
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    right: 15px; }
+#langue #langue-menu .other-locals {
+    display: none; }
+#langue #langue-menu .other-locals.active {
+    display: block; }
+
+#map {
+    width: 100%;
+    height: 250px; }
+
+/*# sourceMappingURL=style.css.map */
