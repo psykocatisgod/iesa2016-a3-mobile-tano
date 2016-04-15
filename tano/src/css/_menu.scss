@@ -11,9 +11,16 @@ nav{
 			text-transform:uppercase;
 			color: white;
 			position: absolute;
-    		right: 15px;
+		    width: 50px;
+		    text-align: right;
+		    padding-top: 15px;
+		}
+		.curr-locale{
+			padding-right:15px;
 		}
 		.other-locals{
+			padding-right: 15px;
+			background-color:#961e1e;
 			display:none;
 			&.active{
 				display:block;

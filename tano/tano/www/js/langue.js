@@ -1,4 +1,6 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+$(function () {
+    
+	document.addEventListener("deviceready", onDeviceReady, false);
 
   // Cordova is ready
   //
@@ -6,9 +8,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 	     
 	   var onSuccess = function(language)
 	   {
-	   		alert('language: ' + language.value + '\n');
-	   		// document.querySelectorAll('.curr-locale').innerHTML = language.value;
-	   }
+	   		// alert('language: ' + language.value + '\n');
+	   		$('.curr-locale, .locale').text(language.value);	
+   		}
 	   function onError()
 	   {
 	       alert('Error getting language\n');
@@ -16,3 +18,5 @@ document.addEventListener("deviceready", onDeviceReady, false);
 	   navigator.globalization.getPreferredLanguage(onSuccess, onError);
 
 	}
+
+});

@@ -21,8 +21,14 @@ fieldset {
     text-transform: uppercase;
     color: white;
     position: absolute;
-    right: 15px; }
+    width: 50px;
+    text-align: right;
+    padding-top: 15px; }
+  #langue #langue-menu .curr-locale {
+    padding-right: 15px; }
   #langue #langue-menu .other-locals {
+    padding-right: 15px;
+    background-color: #961e1e;
     display: none; }
     #langue #langue-menu .other-locals.active {
       display: block; }
