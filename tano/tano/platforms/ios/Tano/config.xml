@@ -24,6 +24,9 @@
     <feature name="Sms">
         <param name="ios-package" value="Sms" />
     </feature>
+    <feature name="Globalization">
+        <param name="ios-package" value="CDVGlobalization" />
+    </feature>
     <name>Tano</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

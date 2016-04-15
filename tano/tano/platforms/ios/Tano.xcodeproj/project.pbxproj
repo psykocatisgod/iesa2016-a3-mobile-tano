@@ -27,6 +27,7 @@
 		8B8BB2CE261948DC80DCA2B4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716192FC43B54FADA858E387 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F4D6D4A302B142828FF9A29C /* Sms.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA28C5C63E74348BE88D593 /* Sms.m */; };
 		820F36B1277E4F9096021603 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2F0C364FAC40A793E0EE29 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA38B78FE75B494B8E06A533 /* CDVGlobalization.m in Sources */ = {isa = PBXBuildFile; fileRef = F3901E36B86C4CF89580ABED /* CDVGlobalization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		5AA28C5C63E74348BE88D593 /* Sms.m */ = {isa = PBXFileReference; name = "Sms.m"; path = "com.cordova.plugins.sms/Sms.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		2584A602F1BB4763917CA29B /* Sms.h */ = {isa = PBXFileReference; name = "Sms.h"; path = "com.cordova.plugins.sms/Sms.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		BA2F0C364FAC40A793E0EE29 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F3901E36B86C4CF89580ABED /* CDVGlobalization.m */ = {isa = PBXFileReference; name = "CDVGlobalization.m"; path = "cordova-plugin-globalization/CDVGlobalization.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0EFDD5030AE146B89A6FCCB4 /* CDVGlobalization.h */ = {isa = PBXFileReference; name = "CDVGlobalization.h"; path = "cordova-plugin-globalization/CDVGlobalization.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,8 @@
 				9EE45AF6C4054DA49963F297 /* CDVContact.h */,
 				5AA28C5C63E74348BE88D593 /* Sms.m */,
 				2584A602F1BB4763917CA29B /* Sms.h */,
+				F3901E36B86C4CF89580ABED /* CDVGlobalization.m */,
+				0EFDD5030AE146B89A6FCCB4 /* CDVGlobalization.h */,
 			);
 			name = Plugins;
 			path = "Tano/Plugins";
@@ -332,6 +337,7 @@
 				C54A4E2EB9F24D62AB3C37C9 /* CDVContacts.m in Sources */,
 				662F658311E547F49B46A1A7 /* CDVContact.m in Sources */,
 				F4D6D4A302B142828FF9A29C /* Sms.m in Sources */,
+				FA38B78FE75B494B8E06A533 /* CDVGlobalization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

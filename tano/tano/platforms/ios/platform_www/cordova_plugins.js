@@ -127,6 +127,22 @@ module.exports = [
         "clobbers": [
             "window.sms"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+        "id": "cordova-plugin-globalization.GlobalizationError",
+        "pluginId": "cordova-plugin-globalization",
+        "clobbers": [
+            "window.GlobalizationError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+        "id": "cordova-plugin-globalization.globalization",
+        "pluginId": "cordova-plugin-globalization",
+        "clobbers": [
+            "navigator.globalization"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -135,7 +151,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-camera": "2.1.1",
     "cordova-plugin-contacts": "2.0.1",
-    "com.cordova.plugins.sms": "0.1.10"
+    "com.cordova.plugins.sms": "0.1.10",
+    "cordova-plugin-globalization": "1.0.3"
 }
 // BOTTOM OF METADATA
 });

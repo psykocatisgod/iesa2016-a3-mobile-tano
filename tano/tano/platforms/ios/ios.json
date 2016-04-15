@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"ios-package\" value=\"CDVGlobalization\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -50,6 +54,9 @@
             "PACKAGE_NAME": "fr.tano.iesacordova"
         },
         "com.cordova.plugins.sms": {
+            "PACKAGE_NAME": "fr.tano.iesacordova"
+        },
+        "cordova-plugin-globalization": {
             "PACKAGE_NAME": "fr.tano.iesacordova"
         }
     },
@@ -182,12 +189,29 @@
             "clobbers": [
                 "window.sms"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+            "id": "cordova-plugin-globalization.GlobalizationError",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "window.GlobalizationError"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+            "id": "cordova-plugin-globalization.globalization",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "navigator.globalization"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.1",
         "cordova-plugin-camera": "2.1.1",
         "cordova-plugin-contacts": "2.0.1",
-        "com.cordova.plugins.sms": "0.1.10"
+        "com.cordova.plugins.sms": "0.1.10",
+        "cordova-plugin-globalization": "1.0.3"
     }
 }
