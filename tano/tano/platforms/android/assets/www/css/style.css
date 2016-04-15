@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+ul {
+  list-style: none; }
+
+fieldset {
+  border: none; }
+
+.clear {
+  clear: both; }
+
+#langue #langue-menu {
+  width: 100%;
+  height: 50px;
+  background-color: #961e1e; }
+  #langue #langue-menu .dropdown {
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    width: 50px;
+    text-align: right;
+    padding-top: 15px;
+    right: 0; }
+  #langue #langue-menu .curr-locale {
+    padding-right: 15px; }
+  #langue #langue-menu .dropdown-menu {
+    padding-right: 15px;
+    background-color: #961e1e;
+    display: none; }
+    #langue #langue-menu .dropdown-menu.active {
+      display: block; }
+    #langue #langue-menu .dropdown-menu .other-locals {
+      margin-top: 15px; }
+      #langue #langue-menu .dropdown-menu .other-locals li {
+        height: 25px; }
+
+#map {
+  width: 100%;
+  height: 250px; }
+
+/*# sourceMappingURL=style.css.map */

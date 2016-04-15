@@ -4,6 +4,3 @@
 #ignore sass_cache
 /src/.sass-cache
 
-#ignore platforms
-/tano/platforms/android/*
-/tano/platforms/ios/*
