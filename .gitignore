@@ -3,3 +3,6 @@
 
 #ignore sass_cache
 /src/.sass-cache
+
+#ignore phpstorm
+.idea/
