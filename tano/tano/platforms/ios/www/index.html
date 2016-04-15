@@ -33,20 +33,21 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Hello World</title>
 </head>
 <body>
 <div class="app">
-    <h1>Tano</h1>
+    <h1 class="hide">Tano</h1>
     <div class="camera">
-        <h2>Choisir une photo</h2>
+        <h6 style="margin-bottom: 0;">Choisir une photo</h6>
         <img src="" alt="" id="imgCamera">
-        <input type="submit" class="btn btn-default" value="Album Photo" id="findPhotoAlbum">
-        <input type="submit" class="btn btn-default" value="Prendre une photo" id="camera">
+        <input type="submit" class="btn btn-default btn-block" value="Album Photo" id="findPhotoAlbum">
+        <input type="submit" class="btn btn-default btn-block" value="Prendre une photo" id="camera">
     </div>
-    <div class="contacts">
-        <h2>Contacts</h2>
-        <input id="findButton" class="btn btn-default" type="submit" value="Sélectionner un contact">
+    <div class="contacts" style="margin-top: 15px;">
+        <h6>Contacts</h6>
+        <input id="findButton" class="btn btn-default btn-block" type="submit" value="Sélectionner un contact">
         <div id="name"></div>
     </div>
     <!--<div class="modal-text-message">
@@ -61,8 +62,8 @@
                     <h4>Envoyer un message...</h4>
                 </div>
                 <div class="modal-body">
-                    <textarea id="messageTxt" placeholder="Entrer un message"></textarea>
-                    <input class="sendSms btn btn-default" type="button" value="SMS" />
+                    <textarea id="messageTxt" class="form-control" placeholder="Entrer un message"></textarea>
+                    <input class="sendSms btn btn-default btn-block" style="margin-top: 10px;" type="button" value="Envoyer" />
                 </div>
             </div>
         </div>
@@ -72,8 +73,15 @@
         <p class="event listening">Connecting to Device</p>
         <p class="event received">Device is Ready</p>
     </div>
-    <a href="map.html">Géolocalisation</a>
-    <a href="langue.html">Langue</a>
+
+
+    <div class="btn-group btn-group-xs buttons-menu" role="group" aria-label="...">
+        <a href="map.html" class="btn btn-default">Géolocalisation</a>
+        <a href="langue.html" class="btn btn-default">Langue</a>
+    </div>
+
+
+
 </div>
 <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>

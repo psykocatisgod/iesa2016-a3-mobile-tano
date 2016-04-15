@@ -10,6 +10,14 @@ ul {
 fieldset {
     border: none; }
 
+
+.buttons-menu
+{
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+}
+
 .clear {
     clear: both; }
 
