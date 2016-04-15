@@ -11,20 +11,27 @@ nav{
 			text-transform:uppercase;
 			color: white;
 			position: absolute;
-		    width: 50px;
+		    width: 100px;
 		    text-align: right;
 		    padding-top: 15px;
+		    right:0;
 		}
 		.curr-locale{
 			padding-right:15px;
 		}
-		.other-locals{
+		.dropdown-menu{
 			padding-right: 15px;
 			background-color:#961e1e;
 			display:none;
 			&.active{
 				display:block;
 			}
+			.other-locals{
+				margin-top: 15px;
+				li{
+				    height: 25px;
+				}
+			} 
 		}
 	}
 }
