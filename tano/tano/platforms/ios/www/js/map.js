@@ -89,7 +89,11 @@ $(function () {
                         lng: place.geometry.location.lng()
                     };
                 });
+
                 carte.fitBounds(bounds);
+                
+                var cityAddress = document.querySelector('.cityAddress');
+                cityAddress.innerHTML = ' de ' + places[0].formatted_address;
 
                 service.nearbySearch({
                     location: LatiLong,
@@ -97,6 +101,8 @@ $(function () {
                     types: ['restaurant']
                 }, callback);
             });
+
+
 
             service.nearbySearch({
                 location: LatiLong,
