@@ -1,3 +1,23 @@
 nav{
 	
 }
+
+#langue{
+	#langue-menu{
+		width:100%;
+		height:50px;
+		background-color:#961e1e;
+		.dropdown{
+			text-transform:uppercase;
+			color: white;
+			position: absolute;
+    		right: 15px;
+		}
+		.other-locals{
+			display:none;
+			&.active{
+				display:block;
+			}
+		}
+	}
+}
