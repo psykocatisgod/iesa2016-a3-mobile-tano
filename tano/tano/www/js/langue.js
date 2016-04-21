@@ -26,7 +26,7 @@ $(function () {
 	});
 
 	$('.ch-lang').on('click', function(){
-		ajaxify($this.data('loc'));
+		ajaxify($(this).data('loc'));
 	});
 
 	function ajaxify(lang){
