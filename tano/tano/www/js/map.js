@@ -112,6 +112,10 @@ $(function () {
 
 
         }//onSuccess
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' +
+                'message: ' + error.message + '\n');
+        }
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 
@@ -150,10 +154,7 @@ $(function () {
 
 
 
-    function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-            'message: ' + error.message + '\n');
-    }
+
 
 
     // googleMaps();
