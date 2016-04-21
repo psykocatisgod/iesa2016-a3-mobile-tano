@@ -6,8 +6,8 @@ $(function () {
   //
   	function onDeviceReady() {
 
-		StatusBar.overlaysWebView(false);
-		StatusBar.backgroundColorByHexString("#000000");
+		/*StatusBar.overlaysWebView(false);
+		StatusBar.backgroundColorByHexString("#000000");*/
 	     
 	   var onSuccess = function(language)
 	   {
