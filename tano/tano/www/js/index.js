@@ -46,7 +46,7 @@ var app = {
     getOrientation: function() {
 
         function onSuccess(heading) {
-            var element = document.getElementById('heading');
+            var element = document.getElementById('boussole');
             element.innerHTML = 'Heading: ' + heading.magneticHeading;
         }
 
