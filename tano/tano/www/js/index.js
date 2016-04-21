@@ -47,7 +47,7 @@ var app = {
 
         function onSuccess(heading) {
             var element = document.getElementById('boussole');
-            element.innerHTML = 'Heading: ' + heading.magneticHeading;
+            element.innerHTML = 'Boussole: ' + heading.magneticHeading;
         }
 
         function onError(error) {
