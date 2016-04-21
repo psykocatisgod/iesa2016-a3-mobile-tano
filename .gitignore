@@ -10,3 +10,4 @@ tano/src/node_modules/.sass-cache
 #ignore platforms
 tano/tano/platforms/*
 tano/tano/plugins/ios.json
+tano/tano/plugins/android.json
