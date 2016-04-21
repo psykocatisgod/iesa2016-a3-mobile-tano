@@ -39,10 +39,10 @@ $(function () {
   				console.log(data);   
   				$('.datas').html('');
   				for (var i = 0; i < data.length; i++) {
-					var html = '<li class="list-group-item resto-'+data[i].id+'">'+
-									'<h2>'+data[i].name+'</h2>'+
-									'<div class="description">'+data[i].description+'</div>'+
-								'</li>';
+					var html = '<div class="resto-'+data[i].id+'">'+
+							'<h2>'+data[i].name+'</h2>'+
+							'<div class="description">'+data[i].description+'</div>'
+						'</div>';
 					$('.datas').append(html);
 				}           
             },//Fin Success
