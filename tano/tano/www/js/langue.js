@@ -14,7 +14,7 @@ $(function () {
 	   		// alert('language: ' + language.value + '\n');
 	   		// ajaxify(language.value);
 	   		ajaxify(language.value);
-	   		$('.curr-locale, .locale').text(language.value);	
+	   		$('.locale').text(language.value);
    		}
 	   function onError()
 	   {
@@ -24,9 +24,6 @@ $(function () {
 
 	}
 
-	$('.curr-locale').on('click', function(){
-		$('.dropdown-menu').toggleClass('active');
-	});
 
 	$('.ch-lang').on('click', function(){
 		ajaxify($(this).data('loc'));
