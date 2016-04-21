@@ -130,6 +130,7 @@ $(function () {
                 createMarker(results[i]);
 
                 var list = document.createElement('li');
+                list.className += " list-group-item";
                 final.push(results[i]['name']);
 
                 reponse.appendChild(list);
