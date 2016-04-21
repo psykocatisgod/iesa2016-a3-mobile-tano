@@ -9,6 +9,8 @@ $(function () {
 	   var onSuccess = function(language)
 	   {
 	   		// alert('language: ' + language.value + '\n');
+	   		// ajaxify(language.value);
+	   		ajaxify(language.value);
 	   		$('.curr-locale, .locale').text(language.value);	
    		}
 	   function onError()
@@ -23,29 +25,40 @@ $(function () {
 		$('.dropdown-menu').toggleClass('active');
 	});
 
-	function ajaxify(){
+	$('.ch-lang').on('click', function(){
+		ajaxify($this.data('loc'));
+	});
+
+	function ajaxify(lang){
 		 $.ajax({
-                url : "http://www.titouanpierre.com/json/read.php",
-                // url : "http://localhost/iesa/mobile/tano/iesa2016-a3-mobile-tano/tano/json/read.php",
-                type: 'GET',
-                dataType: 'json',
-                success : function(data){
+            url : "http://www.titouanpierre.com/json/read.php",
+            type: 'GET',
+            dataType: 'json',
+            success : function(data){
+            	data = data[0][lang];
+  				console.log(data);   
+  				$('.datas').html('');
+  				for (var i = 0; i < data.length; i++) {
+					var html = '<div class="resto-'+data[i].id+'">'+
+									'<h2>'+data[i].name+'</h2>'+
+									'<div class="description">'+data[i].description+'</div>'
+								'</div>';
+					$('.datas').append(html);
+				}           
+            },//Fin Success
+	        error: function(xhr, message, errorThrown ){
+	            console.log(xhr);
+	            console.log(message);
+	            console.log(errorThrown);
 
-                    console.log(data);
-                    for (var i = 0; i < data.length; i++) {
-                    	$('.datas').append('<li>'+data[i].id+'</li>');
-                	}//endfor
-                },//Fin Success
-		        error: function(){
-		            alert('Erreur Serveur');
-		        }//Fin Error//endSuccess
+	        }//Fin Error//endSuccess
         });
-
-
 
 	}	
 
-	ajaxify();
+	// ajaxify('fr_FR');
+
+	
 
 
 
