@@ -6,3 +6,6 @@
 
 #ignore phpstorm
 .idea/
+
+#ignore platforms
+.platforms/*
