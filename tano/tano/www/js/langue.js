@@ -19,6 +19,9 @@ $(function () {
 	   }
 	   navigator.globalization.getLocaleName(onSuccess, onError);
 
+	   StatusBar.backgroundColorByName("white");
+
+
 	}
 
 	$('.curr-locale').on('click', function(){

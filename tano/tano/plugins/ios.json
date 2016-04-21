@@ -11,6 +11,18 @@
                         {
                             "xml": "<feature name=\"Globalization\"><param name=\"ios-package\" value=\"CDVGlobalization\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -22,6 +34,9 @@
             "PACKAGE_NAME": "fr.tano.iesacordova"
         },
         "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "fr.tano.iesacordova"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "fr.tano.iesacordova"
         }
     },
