@@ -65,16 +65,16 @@ var app = {
     checkConnection: function() {
         var networkState = navigator.connection.type;
         var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI]     = 'WiFi connection';
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.UNKNOWN]  = 'Unknown';
+        states[Connection.ETHERNET] = 'Ethernet';
+        states[Connection.WIFI]     = 'WiFi';
+        states[Connection.CELL_2G]  = '2G';
+        states[Connection.CELL_3G]  = '3G';
+        states[Connection.CELL_4G]  = '4G';
         states[Connection.CELL]     = 'Cell generic connection';
-        states[Connection.NONE]     = 'No network connection';
+        states[Connection.NONE]     = 'Pas connecté';
 
-        document.getElementById('network').innerHTML = 'Votre connexion: ' + states[networkState];
+        document.getElementById('network').innerHTML = states[networkState];
     },
 
     setupFindContactsButtonCallback: function () {
