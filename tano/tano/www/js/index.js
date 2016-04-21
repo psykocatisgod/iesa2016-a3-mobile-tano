@@ -47,7 +47,7 @@ var app = {
 
         function onSuccess(heading) {
             var element = document.getElementById('boussole');
-            element.innerHTML = 'Boussole: ' + heading.magneticHeading;
+            element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading*100)/100;
         }
 
         function onError(error) {
