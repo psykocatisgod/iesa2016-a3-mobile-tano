@@ -37,21 +37,26 @@ var app = {
         app.setupFindContactsButtonCallback();
         app.setupPhotoFindButton();
         app.checkConnection();
-        //app.getOrientation();
+        app.getOrientation();
     },
 
-    /*getOrientation: function() {
+    getOrientation: function() {
 
         function onSuccess(heading) {
-            alert('Heading: ' + heading.magneticHeading);
+            var element = document.getElementById('heading');
+            element.innerHTML = 'Heading: ' + heading.magneticHeading;
         }
 
         function onError(error) {
             alert('CompassError: ' + error.code);
         }
 
-        navigator.compass.getCurrentHeading(onSuccess, onError);
-    },*/
+        var options = {
+            frequency: 3000
+        }; // Update every 3 seconds
+
+        navigator.compass.watchHeading(onSuccess, onError, options);
+    },
 
     checkConnection: function() {
         var networkState = navigator.connection.type;
