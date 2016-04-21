@@ -38,6 +38,9 @@ var app = {
         app.setupPhotoFindButton();
         app.checkConnection();
         app.getOrientation();
+
+        StatusBar.overlaysWebView(false);
+        StatusBar.backgroundColorByHexString("#000000");
     },
 
     getOrientation: function() {
