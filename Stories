@@ -1,0 +1,94 @@
+Jour 1)
+
+- Partager un restaurant à un de ses contacts.
+
+EN TANT QUE client passé d'un restaurant
+JE SOUHAITE Partager un restaurant à des amis
+AFIN DE Partager un moment de convivialité avec ses amis
+
+API -> Contact
+
+- Trouver un restaurant près de soi
+
+EN TANT QUE futur client d'un restaurant
+JE SOUHAITE trouver un restaurant près de moi
+AFIN DE pouvoir manger snas trop me déplacer
+
+API -> Géolocalisation
+
+- Partager des photos prises au restaurant
+
+EN TANT QUE client atablé
+JE SOUHAITE pouvoir partager mes repas
+AFIN DE permettre aux futurs clients d'avoir un aperçu des plats/lieu
+
+API -> Camera
+
+Jour 2)
+
+- Comprendre les menus (en langues étrangères) / savoir ce que l'on peut manger
+
+EN TANT QUE client curieux
+JE SOUHAITE faire un choix parmis les menus des restaurants autour de moi
+AFIN DE manger un repas qui me convient
+
+API -> Globalisation
+
+- Obtenir des informations sur les restaurants
+
+EN TANT QUE futur client d'un restaurant
+JE SOUHAITE pouvoir acceder aux informations des restaurants autour de moi
+AFIN DE connaître toutes les informations (menus, notes, avis...)
+
+API -> Access remote
+
+- Avoir une application ergonomique reconnaissable parmis les autres
+
+EN TANT QUE Détenteur d'un smartphone
+JE SOUHAITE Acceder à l'application rapidement en la reconnaissant grâce à son icone
+AFIN DE ne pas perdre de temps en cherchant l'app parmis toutes les autres
+
+API -> Thème UI
+
+- POuvoir suivre les activités des utilisateurs pour améliorer l' UI
+
+EN TANT QUE Developpeur 
+JE SOUHAITE Avoir un suivi du parcours des utilisateurs
+AFIN DE améliorer notre application pour toujours répondre à l'exigence des utilisateurs
+
+API -> Analytics 
+
+Jour 3)
+
+- Bloquer l'orientation de l'application (portrait) 
+
+EN TANT QUE utilisateur quotidien
+JE SOUHAITE naviguer sur l'application avec un certain confort
+AFIN DE garder une stabilité lors de l'utilisation de l'application
+
+API -> Device orientation
+
+- Connaître l'état de la connexion du device
+
+EN TANT QUE client cherchant un restaurant
+JE SOUHAITE savoir si je suis connecté à internet
+AFIN DE savoir si je peux utiliser pleinement l'application
+
+API -> Network information
+
+- Améliorer l'immersion de l'utilisateur dans l'application
+
+EN TANT QUE Homme d'affaire hyper-actif
+JE SOUHAITE avoir accès à toutes mes notifications
+AFIN DE conserver mes activités externes tout en navigant sur l'application
+
+API -> Status bar
+
+- Améliorer la navigation
+
+EN TANT QUE futur client d'un restaurant 
+JE SOUHAITE naviguer facilement et intuitivement 
+AFIN DE trouver les informations plus facilement
+
+API -> Framework Ui
+
