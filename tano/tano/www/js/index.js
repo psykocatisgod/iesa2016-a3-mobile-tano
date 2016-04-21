@@ -37,26 +37,21 @@ var app = {
         app.setupFindContactsButtonCallback();
         app.setupPhotoFindButton();
         app.checkConnection();
-        app.checkOrientation();
+        //app.getOrientation();
     },
 
-    checkOrientation: function(){
+    /*getOrientation: function() {
 
-        function compassSuccess(heading) {
+        function onSuccess(heading) {
             alert('Heading: ' + heading.magneticHeading);
         }
 
-        function compassError(error) {
+        function onError(error) {
             alert('CompassError: ' + error.code);
         }
 
-        navigator.compass.getCurrentHeading(compassSuccess, compassError);
-        $('#orientation').click(function(){
-            console.log(navigator.compass);
-        });
-
-
-    },
+        navigator.compass.getCurrentHeading(onSuccess, onError);
+    },*/
 
     checkConnection: function() {
         var networkState = navigator.connection.type;
