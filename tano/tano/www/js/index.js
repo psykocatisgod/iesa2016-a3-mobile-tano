@@ -37,6 +37,24 @@ var app = {
         app.setupFindContactsButtonCallback();
         app.setupPhotoFindButton();
         app.checkConnection();
+        app.checkOrientation();
+    },
+
+    checkOrientation: function(){
+
+        function compassSuccess(heading) {
+            alert('Heading: ' + heading.magneticHeading);
+        }
+
+        function compassError(error) {
+            alert('CompassError: ' + error.code);
+        }
+
+        navigator.compass.getCurrentHeading(compassSuccess, compassError);
+        $('#orientation').click(function(){
+            console.log(navigator.compass);
+        });
+
 
     },
 
