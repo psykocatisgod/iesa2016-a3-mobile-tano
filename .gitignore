@@ -1,8 +1,8 @@
 #ignore node_modules
-/src/node_modules
+tano/src/node_modules/
 
 #ignore sass_cache
-/src/.sass-cache
+tano/src/node_modules/.sass-cache
 
 #ignore phpstorm
 .idea/
