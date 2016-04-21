@@ -48,12 +48,13 @@ var app = {
         }
 
         function onError(error) {
-            alert('CompassError: ' + error.code);
+            /*alert('CompassError: ' + error.code);*/
         }
 
         var options = {
-            frequency: 3000
+            frequency: 0
         }; // Update every 3 seconds
+
 
         navigator.compass.watchHeading(onSuccess, onError, options);
     },
