@@ -8,4 +8,5 @@
 .idea/
 
 #ignore platforms
-.platforms/*
+tano/tano/platforms/*
+tano/tano/plugins/ios.json
