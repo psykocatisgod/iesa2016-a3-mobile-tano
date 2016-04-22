@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Tano - Ma page profil</title>
+</head>
+
+<body>
+    <div class="app container">
+        <div class="row">
+            <div class="col-xs-2" style="padding-right: 0;">
+                <a href="index.html" class="btn btn-default" style="margin: 10px 0;"><span class="glyphicon glyphicon-arrow-left"></span></a>
+            </div>
+            <div class="col-xs-10" style="padding-left: 0;">
+                <button class="btn btn-default" style="width:100%;margin: 10px 0;">Mon profil</button>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col-xs-12">
+                <div class="form-group">
+                    <label for="first_name">Prénom</label>
+                    <input type="text" id="first_name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Nom</label>
+                    <input type="text" id="last_name" class="form-control">
+                </div>
+                <input type="button" class="btn btn-success maj" value="Mettre à jour">
+            </form>
+        </div>
+        
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/profil.js"></script>
+</body>
+
+</html>
