@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDurP5qtgOwOorCWW8jTDkD-pKMZExD6B4&libraries=places"></script>
-        <title>Langue</title>
-    </head>
-    <body id="langue">
-        <div class="app container">
-            <div class="row">
-                <div class="col-xs-2" style="padding-right: 0;">
-                    <a href="index.html" class="btn btn-default" style="margin: 10px 0;"><span class="glyphicon glyphicon-arrow-left"></span></a>
-                </div>
-                <div class="col-xs-10" style="padding-left: 0;">
-                    <button class="btn btn-default" style="width:100%;margin: 10px 0;">Langue</button>
-                </div>
-            </div>
-            <!--<nav id="langue-menu">
-                <div class="dropdown">
-                    <span class="curr-locale"></span>
-                    <div class="dropdown-menu">
-                        <ul class="other-locals">
-                            <li class="ch-lang" data-loc="en-GB">en</li>
-                            <li class="ch-lang" data-loc="es-ES">es</li>
-                            <li class="ch-lang" data-loc="fr-FR">fr</li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>-->
-            <div class="btn-group" style="border:1px solid #eee; border-radius:5px;">
-                <button class="btn">Changer la langue</button>
-                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu other-locals">
-                    <li><a class="ch-lang" data-loc="en-GB" tabindex="-1" href="#">EN</a></li>
-                    <li><a class="ch-lang" data-loc="es-ES" tabindex="-1" href="#">ES</a></li>
-                    <li><a class="ch-lang" data-loc="fr-FR" tabindex="-1" href="#">FR</a></li>
-                </ul>
-            </div>
-            <h3>Votre locale est <span class="locale"></span></h3>
 
-                <div class="datas"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDurP5qtgOwOorCWW8jTDkD-pKMZExD6B4&libraries=places"></script>
+    <title>Langue</title>
+</head>
+
+<body id="langue">
+    <div class="app container">
+        <div class="row">
+            <div class="col-xs-2" style="padding-right: 0;">
+                <a href="index.html" class="btn btn-default" style="margin: 10px 0;"><span class="glyphicon glyphicon-arrow-left"></span></a>
+            </div>
+            <div class="col-xs-10" style="padding-left: 0;">
+                <button class="btn btn-default" style="width:100%;margin: 10px 0;">Langue</button>
+            </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script src="js/jquery-2.2.3.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/langue.js"></script>
-    </body>
+
+        <div class="btn-group" style="border:1px solid #eee; border-radius:5px;">
+            <button class="btn">Changer la langue</button>
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu other-locals">
+                <li><a class="ch-lang" data-loc="en-GB" tabindex="-1" href="#">EN</a></li>
+                <li><a class="ch-lang" data-loc="es-ES" tabindex="-1" href="#">ES</a></li>
+                <li><a class="ch-lang" data-loc="fr-FR" tabindex="-1" href="#">FR</a></li>
+            </ul>
+        </div>
+        
+        <h3>Votre locale est <span class="locale"></span></h3>
+
+        <div class="datas"></div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/langue.js"></script>
+</body>
+
 </html>

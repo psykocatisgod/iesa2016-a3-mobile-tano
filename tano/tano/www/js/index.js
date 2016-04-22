@@ -18,14 +18,14 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -43,11 +43,11 @@ var app = {
         StatusBar.backgroundColorByHexString("#000000");
     },
 
-    getOrientation: function() {
+    getOrientation: function () {
 
         function onSuccess(heading) {
             var element = document.getElementById('boussole');
-            element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading*100)/100;
+            element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading * 100) / 100;
         }
 
         function onError(error) {
@@ -62,52 +62,55 @@ var app = {
         navigator.compass.watchHeading(onSuccess, onError, options);
     },
 
-    checkConnection: function() {
+    checkConnection: function () {
         var networkState = navigator.connection.type;
         var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown';
+        states[Connection.UNKNOWN] = 'Unknown';
         states[Connection.ETHERNET] = 'Ethernet';
-        states[Connection.WIFI]     = 'WiFi';
-        states[Connection.CELL_2G]  = '2G';
-        states[Connection.CELL_3G]  = '3G';
-        states[Connection.CELL_4G]  = '4G';
-        states[Connection.CELL]     = 'Cell generic connection';
-        states[Connection.NONE]     = 'Pas connecté';
+        states[Connection.WIFI] = 'WiFi';
+        states[Connection.CELL_2G] = '2G';
+        states[Connection.CELL_3G] = '3G';
+        states[Connection.CELL_4G] = '4G';
+        states[Connection.CELL] = 'Cell generic connection';
+        states[Connection.NONE] = 'Pas connecté';
 
         document.getElementById('network').innerHTML = states[networkState];
     },
 
     setupFindContactsButtonCallback: function () {
         $('#findButton').click(function () {
-            navigator.contacts.pickContact(function(contact)
-            {
+            navigator.contacts.pickContact(function (contact) {
                 var prenom = contact.name.givenName;
                 var nom = contact.name.familyName;
                 var numero = contact.phoneNumbers[0].value;
                 $('#myModal').modal('show');
-                $('.sendSms').click(function(){
+                $('.sendSms').click(function () {
                     var textsms = $('#messageTxt').val();
                     app.sendSms(prenom, nom, numero, textsms);
                 });
-            },function(err){
+            }, function (err) {
                 console.log('Error: ' + err);
             });
         });
     },
-    sendSms: function(prenom, nom, numero, textsms) {
+    sendSms: function (prenom, nom, numero, textsms) {
         var number = numero;
         var message = textsms;
         //CONFIGURATION
         var options = {
             replaceLineBreaks: false, // true to replace \n by a new line, false by default
             android: {
-                intent: 'INTENT'  // send SMS with the native android SMS messaging
-                //intent: '' // send SMS without open any other app
+                intent: 'INTENT' // send SMS with the native android SMS messaging
+                    //intent: '' // send SMS without open any other app
             }
         };
-        alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur');
-        var success = function () { alert('Message sent successfully'); };
-        var error = function (e) { alert('Message Failed:' + e); };
+        //alert('Le message n\'a pas été envoyé à ' + prenom + ' ' + nom + ' car vous utilisez un émulateur');
+        var success = function () {
+            alert('Message sent successfully');
+        };
+        var error = function (e) {
+            alert('Message Failed:' + e);
+        };
         sms.send(number, message, options, success, error);
     },
 
@@ -152,7 +155,7 @@ var app = {
         });
     },
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
