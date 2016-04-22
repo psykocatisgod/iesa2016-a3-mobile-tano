@@ -16,6 +16,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+$(function () {
+    var permanentStorage = window.localStorage,
+        firstNameInput = document.getElementById('name');
+
+    if (permanentStorage.getItem('firstName')) {
+        firstNameInput.textContent = permanentStorage.getItem('firstName');
+    }
+
+    console.log(firstNameInput);
+});
+
 var app = {
     // Application Constructor
     initialize: function () {
