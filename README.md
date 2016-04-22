@@ -18,6 +18,7 @@
 
 Une fois le projet récupéré, générer les platforms avec la commande suivante :
 > cordova platform add android
+
 > cordova platform add ios
 
 ## Blocages
