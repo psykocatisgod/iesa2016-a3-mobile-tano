@@ -49,21 +49,23 @@ var app = {
         app.setupFindContactsButtonCallback();
         app.setupPhotoFindButton();
         app.checkConnection();
+        app.getCompass();
         app.getOrientation();
 
         StatusBar.overlaysWebView(false);
         StatusBar.backgroundColorByHexString("#000000");
     },
 
-    getOrientation: function () {
-
+    getCompass: function () {
+        
+        var element = document.getElementById('boussole');
+        
         function onSuccess(heading) {
-            var element = document.getElementById('boussole');
             element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading * 100) / 100;
         }
 
         function onError(error) {
-            /*alert('CompassError: ' + error.code);*/
+            element.innerHTML = 'Vous n\'avez pas la boussole sur votre appareil';
         }
 
         var options = {
@@ -74,6 +76,21 @@ var app = {
         navigator.compass.watchHeading(onSuccess, onError, options);
     },
 
+    getOrientation: function () {
+        
+        var element = document.getElementById('acceleration');
+        
+        function onSuccess(acceleration) {
+            element.innerHTML = Math.round(acceleration.x * 100) / 100 + ' ' + Math.round(acceleration.y * 100) / 100 + ' ' + Math.round(acceleration.z * 100) / 100
+        }
+
+        function onError() {
+            alert('onError!');
+        }
+
+        navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
+    },
+    
     checkConnection: function () {
         var networkState = navigator.connection.type;
         var states = {};
