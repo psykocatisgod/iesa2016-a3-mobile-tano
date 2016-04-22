@@ -9,9 +9,14 @@ $(function () {
     }
 
     btnMaj.addEventListener('click', function (e) {
-        var firstName = firstNameInput.value;
-
+        var firstName = firstNameInput.value,
+            majSuccess = document.querySelector('.maj-success');
+        majSuccess.style.display = 'block';
         permanentStorage.setItem('firstName', firstName);
+        setTimeout(function() {
+            majSuccess.style.display = 'none';
+        }, 3000);
+        
     });
 
 });
