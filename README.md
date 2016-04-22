@@ -21,6 +21,8 @@ Une fois le projet récupéré, générer les platforms avec la commande suivant
 
 > cordova platform add ios
 
+Dès que les platforms ont été rajoutées, copier le contenu du dossier **images** qui est à la racine du projet et les ajouter dans **iesa2016-a3-mobile-tano\tano\tano\platforms\**.
+
 ## Blocages
 
 Critique / Plateforme / Problème / Solution
