@@ -77,18 +77,26 @@ var app = {
     },
 
     getOrientation: function () {
-        
-        var element = document.getElementById('acceleration');
+        /*var elementX = document.getElementById('accelerationX'),
+            elementY = document.getElementById('accelerationY'),
+            elementZ = document.getElementById('accelerationZ');*/
         
         function onSuccess(acceleration) {
-            element.innerHTML = Math.round(acceleration.x * 100) / 100 + ' ' + Math.round(acceleration.y * 100) / 100 + ' ' + Math.round(acceleration.z * 100) / 100
+            if (acceleration.x > 6 || acceleration.x < -6) {
+                alert('L\'application n\'est pas disponible en paysage.')
+            }
+            /*elementX.innerHTML = 'X: ' + Math.round(acceleration.x * 100) / 100;
+            elementY.innerHTML = 'Y: ' + Math.round(acceleration.y * 100) / 100;
+            elementZ.innerHTML = 'Z: ' + Math.round(acceleration.z * 100) / 100;*/
         }
 
         function onError() {
-            alert('onError!');
+            //alert('onError!');
         }
 
-        navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
+        var options = { frequency: 1 };  // Update every 3 seconds
+
+        var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
     },
     
     checkConnection: function () {
