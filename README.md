@@ -10,12 +10,17 @@
   
 = Projet --> Tano
 
-# Pitch :
+## Pitch :
 
 "Connaître les menus et avis des restaurants près de chez soi."
 
+## A noter
 
-# Blocages
+Une fois le projet récupéré, générer les platforms avec la commande suivante :
+> cordova platform add android
+> cordova platform add ios
+
+## Blocages
 
 Critique / Plateforme / Problème / Solution
 
